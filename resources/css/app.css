@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your existing CSS can go here */
+
+/* Dark theme CSS */
+body {
+	font-family: 'figtree', Arial, sans-serif;
+	background-color: #222;
+	color: #fff;
+}
+
+/* Centered container for intro */
+.container {
+	text-align: center;
+	padding: 100px;
+}
+
+.anime-meme {
+	max-height: 350px;
+	text-align: center; /* Horizontally center content */
+	display: block; /* This is important for centering */
+	margin: 0 auto; /* Horizontally center the image within its container */
+}
+
+.my-padding {
+	padding: 10pt;
+}
+
+	/* Style for the primary button */
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+/* Style for the container div */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    align-items: flex-start; /* Align buttons to the top */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+/* Style for the login button */
+.btn-login {
+    background-color: #007bff; /* Use your desired background color */
+    color: #fff; /* Text color */
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Style for the register button */
+.btn-register {
+    background-color: #28a745; /* Use your desired background color */
+    color: #fff; /* Text color */
+}
+
+/* Style for the home button */
+.btn-home {
+	background-color: #007bff;
+}

@@ -1,23 +1,20 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Based or Not | Home</title>
+		@vite(['resources/css/app.css', 'resources/js/app.js'])
+	</head>
+	<body class="antialiased">
+		<!-- sign in logic -->
+		<div class="button-container">
+		@auth
+			<a href="{{ route('logout') }}" class="btn btn-login">Log out</a>
+		@endauth
+		</div>
+		<div class="text-center my-padding">
+			<h1>Homepage</h1>
+		</div>
+	</body>
+</html>
